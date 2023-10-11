@@ -7,7 +7,10 @@ bug where openssl versions >= 3.0.10 were not being correctly identified (see
 _`oscrypto` has [fixed the regex bug](https://github.com/wbond/oscrypto/commit/ebbc944485b278192b60080ea1f495e287efb4f8),
 but they have not released a new version containing the fix. This fork contains the
 fix, and we have pushed it to [Simon Data's Artifactory repository](https://simondata.jfrog.io/ui/repos/tree/General/pypi).
-If you need to edit this package, update the `PACKAGE_VERSION` in setup.py and
+Once `oscrypto` releases a new version, we can theoretically stop using this fork
+and resume using the public package._
+
+_If you need to edit this package, update the `PACKAGE_VERSION` in setup.py and
 follow [these instructions](https://simondata.atlassian.net/wiki/spaces/eng/pages/408518703/Contributing+a+Package+in+Artifactory)
 to push the new version to Artifactory._
 
