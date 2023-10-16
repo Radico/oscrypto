@@ -11,3 +11,4 @@ tests/output/
 coverage.xml
 oscrypto.sublime-project
 oscrypto.sublime-workspace
+.idea

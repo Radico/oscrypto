@@ -10,7 +10,7 @@ from setuptools.command.egg_info import egg_info
 
 
 PACKAGE_NAME = 'oscrypto'
-PACKAGE_VERSION = '1.3.0'
+PACKAGE_VERSION = '1.3.1+simon0.0.1'
 PACKAGE_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 
@@ -94,9 +94,10 @@ class CleanCommand(Command):
                     shutil.rmtree(os.path.join(root, dirname))
 
 
-readme = ''
-with codecs.open(os.path.join(PACKAGE_ROOT, 'readme.md'), 'r', 'utf-8') as f:
-    readme = f.read()
+# Omitted because the readme was not included in the tar file for some reason
+# readme = ''
+# with codecs.open(os.path.join(PACKAGE_ROOT, 'readme.md'), 'r', 'utf-8') as f:
+#     readme = f.read()
 
 
 setup(
@@ -109,8 +110,9 @@ setup(
         'a compiler, and relies on the OS for patching. Works on Windows, OS X '
         'and Linux/BSD.'
     ),
-    long_description=readme,
-    long_description_content_type='text/markdown',
+    # Omitted because the readme was not included in the tar file for some reason
+    # long_description=readme,
+    # long_description_content_type='text/markdown',
 
     url='https://github.com/wbond/oscrypto',
 
